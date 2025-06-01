@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Andi Schöttl – KFZ-Service & Aufbereitung</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ff5e00;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    img.logo {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 26px;
+    }
+
+    h2 {
+      margin: 5px 0 10px 0;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .contact {
+      font-size: 15px;
+      margin-bottom: 20px;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .accordion {
+      cursor: pointer;
+      padding: 12px;
+      width: 100%;
+      text-align: left;
+      background-color: #333;
+      color: white;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: #fff;
+      text-align: left;
+    }
+
+    .price-item {
+      margin: 10px 0;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #222;
+    }
+
+    em {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <img src="logo.png" alt="Logo" class="logo">
+  <h1>Andi Schöttl</h1>
+  <h2>KFZ-Service & Aufbereitung</h2>
+
+  <div class="contact">
+    Churwaldenstraße 13<br>
+    6800 Feldkirch – Altenstadt<br>
+    📞 +43 676 / 6056828<br>
+    📧 andi.schoettl87@icloud.com
+  </div>
+
+  <button class="accordion">Preisliste anzeigen</button>
+  <div class="panel">
+    <h3>Komplettpakete</h3>
+    <div class="price-item">
+      <strong>Small – ab 150 €</strong><br>
+      • Schnellreinigung Innen- und Außenraum<br>
+      • Innenreinigung ohne Pflege<br>
+      • Außenreinigung mit Glanzshampoo<br>
+      • Scheibenreinigung innen
+    </div>
+    <div class="price-item">
+      <strong>Mittel – ab 250 €</strong><br>
+      • Innen- und Außenreinigung<br>
+      • Innenreinigung mit Cockpitpflege<br>
+      • Reinigung außen mit Einschichtpolitur
+    </div>
+    <div class="price-item">
+      <strong>Big – ab 350 €</strong><br>
+      • Innen- und Außenreinigung<br>
+      • Innenreinigung mit Komplettpflege<br>
+      • Scheibenreinigung innen und außen<br>
+      • Außenreinigung mit Dreischichtpolitur<br>
+      • Reifenglanz
+    </div>
+    <div class="price-item">
+      <strong>Special Paket – ab 450 €</strong><br>
+      • Innen- und Außenreinigung<br>
+      • Reinigung von Himmel und Sitzen mit Komplettpflege<br>
+      • Scheibenreinigung innen und außen<br>
+      • Außenreinigung mit Dreischichtpolitur & Keramikversiegelung<br>
+      • Reifenglanz und Gummipflege
+    </div>
+
+    <h3>Einzelleistungen</h3>
+    <div class="price-item">
+      <strong>Innenreinigung</strong><br>
+      • Schnellreinigung innen: <strong>ab 100 €</strong><br>
+      • Innenreinigung mit Cockpitpflege: <strong>ab 130 €</strong><br>
+      • Innenreinigung mit Komplettpflege: <strong>ab 180 €</strong>
+    </div>
+    <div class="price-item">
+      <strong>Außenreinigung</strong><br>
+      • Außenreinigung mit Glanzshampoo: <strong>ab 70 €</strong><br>
+      • Außenreinigung mit Shampoo & Glanzversiegelung: <strong>ab 100 €</strong><br>
+      • Außenreinigung mit Shampoo & Dreischichtpolitur: <strong>ab 180 €</strong><br>
+      • Außenreinigung mit Shampoo, Dreischichtpolitur & Keramikpolitur: <strong>ab 300 €</strong><br>
+      • Unterbodenversiegelung: <strong>ab 700 €</strong>
+    </div>
+    <div class="price-item">
+      <em>Extras bezüglich Politur oder Versiegelung können individuell besprochen werden.</em><br><br>
+      <strong>Terminvereinbarung unter:</strong><br>
+      Andreas Schöttl<br>
+      📞 +43 676 6056828
+    </div>
+  </div>
+</div>
+
+<script>
+  const acc = document.querySelector(".accordion");
+  const panel = document.querySelector(".panel");
+  acc.addEventListener("click", function() {
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  });
+</script>
+
+</body>
+</html>
