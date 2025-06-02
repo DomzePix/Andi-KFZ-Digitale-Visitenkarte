@@ -14,7 +14,7 @@
 
     .card {
       background: white;
-      max-width: 600px;
+      max-width: 800px;
       margin: auto;
       padding: 20px;
       border-radius: 12px;
@@ -88,6 +88,32 @@
     em {
       color: #555;
     }
+
+    .gallery {
+      margin-top: 30px;
+    }
+
+    .gallery h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery-container img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      object-fit: cover;
+    }
   </style>
 </head>
 <body>
@@ -157,6 +183,16 @@
       <strong>Terminvereinbarung unter:</strong><br>
       Andreas Schöttl<br>
       📞 +43 676 6056828
+    </div>
+  </div>
+
+  <div class="gallery">
+    <h3>Einblicke in unsere Arbeit</h3>
+    <div class="gallery-container">
+      <img src="bild1.jpg" alt="Innenreinigung 1">
+      <img src="bild2.jpg" alt="Innenreinigung 2">
+      <img src="bild3.jpg" alt="Innenreinigung 3">
+      <img src="bild4.jpg" alt="Sonax Produkte">
     </div>
   </div>
 </div>
